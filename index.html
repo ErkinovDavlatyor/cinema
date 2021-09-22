@@ -7,29 +7,45 @@
   <title>Cinema</title>
   <link rel="stylesheet" href="./style.css">
 </head>
+
+<section class="movie">
   
-  <section class="movie">
-
-    <div class="container">
-
-      <form class="form" id="form">
-
-        <label>
-          <input class="movie__search" placeholder="write film's name . . ." id="search_movie" type="text" name="seach_movie">
-        </label>
-        <label>
-          <select class="movie__genre" name="select" id="select">
-            <option value="All">All</option>
-          </select>
-        </label>
-        <button class="movie__btn" type="submit">Search</button>
-      </form>
+  <div class="container">
+    
+    
+    <form class="form" id="form">
       
-      <ul class="movie__list"></ul>
+      <label>
+        <input class="movie__search" placeholder="write film's name . . ." id="search_movie" type="text" name="seach_movie">
+      </label>
+      <label>
+        <select class="movie__genre" name="select" id="select">
+          <option value="All">All</option>
+        </select>
+      </label>
+      <button class="movie__btn" type="submit">Search</button>
+    </form>
+    
+    <ul class="movie__list"></ul>
+    
+    <div class="modal-container" id="modal_container">
+      <div class="modal">
+        <button id="open">
+          Click to please
+        </button>
+        <h1>Models are</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae labore, ipsum necessitatibus quod maxime ratione eum ipsa voluptas rem qui nesciunt. Et nobis optio totam fuga tempore quos exercitationem alias ab ipsa ut maiores recusandae nemo labore mollitia ducimus excepturi at similique amet aperiam eos commodi, quisquam eligendi vero. Est?</p>
+        <button id="close">
+          X
+        </button>
+      </div>
+      
     </div>
-  </section>
-  <script src="./movies.js"></script>
-  <script src="./utils.js"></script>
-  <script src="./script.js"></script>
+    
+  </div>
+</section>
+<script src="./movies.js"></script>
+<script src="./utils.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>

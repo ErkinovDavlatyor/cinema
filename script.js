@@ -3,6 +3,11 @@ let movieList = MakeElem('.movie__list')
 let movieGenreList = MakeElem('.movie__genre-list')
 let movieGenre = MakeElem('.movie__genre')
 let movieSearch = MakeElem('.movie__search')
+let elMovieFilter = MakeElem(".movie__filter")
+let open = document.getElementById('open')
+let model_container = document.getElementById('model_container')
+let close = document.getElementById('close')
+
 
 elForm.addEventListener('submit',(e)  =>{
     e.preventDefault()
@@ -26,6 +31,19 @@ elForm.addEventListener('submit',(e)  =>{
     }
     render(foundFilms,movieList )
 })
+
+open.addEventListener('click', () =>{
+    model_container.classList.add('show');
+});
+
+
+close.addEventListener('click', () =>{
+    model_container.classList.remove('show');
+});
+
+
+
+
 
 function renderGenresSelect(films, element) {
     const result = []
